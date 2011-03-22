@@ -1,0 +1,356 @@
+<!DOCTYPE html> 
+<!--[if lt IE 9 ]><html lang="en" class="no-js shitty"><![endif]--> 
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]--> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Primal &amp; Paleo Recipes</title> 
+  <meta name="description" content="A search portal for Primal and Paleo recipes."> 
+  <meta name="author" content="Pamela Fox"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="6csFTVp9BemfQgstNmf8x6nLS22xJQTDLv6022JJriI" />
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <style>
+  .image-list li img {
+    vertical-align: top;
+    width: 70px;
+    border: 1px solid gray;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    float: left;
+  }
+  
+  .image-list li {
+    clear: left;
+    list-style: none;
+    margin-bottom: 7px;
+  }
+  
+  .image-list {
+    margin-left: .5em;
+  }
+  
+  section {
+    clear: left;
+  }
+  
+  section p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  section ul {
+    margin-top: 10px;
+  }
+  
+  section a {
+    font-size: 14px;
+  }
+  
+  #chrome-promo {
+    visibility: hidden;
+  }
+  
+  .link-list tr {
+    border-bottom: 1px dotted #137D29;
+  }
+  
+  .link-list td {
+    padding: 5px 5px 3px 5px;
+  }
+  
+  </style>
+  <div id="container"> 
+    <header>
+      <h1>Primal &amp; Paleo Recipes</h1>
+    </header> 
+ 
+    <div id="main" role="main"> 
+ 
+      <nav id="toc" style="display:none"> 
+        <a href="#search" accesskey="2">Recipe Search</a> 
+        <a href="#feed" accesskey="3">Latest Posts</a> 
+        <a href="#tweets" accesskey="3">Latest Tweets</a> 
+        <a href="#sites" accesskey="4">Recipe Sites</a> 
+        <a href="#books" accesskey="5">Recipe Books</a> 
+      </nav> 
+ 
+      <section class="content">
+        <p> 
+          There are a growing number of resources with scrumptious recipe ideas for people in the Primal/Paleo lifestyle - but it can be hard to sift through all of them. This portal is an attempt to make it easier - you can <a href="#search">search for recipes</a>, <a href="#feed">see the latest recipes posted</a>, <a href="#tweets">read the latest tweets</a>, <a href="#sites">browse the recipe sites</a>, and <a href="#books">buy recipe cookbooks</a>.
+        </p>
+        <p>If you know of a resource that should be added, please <a href="http://www.google.com/profiles/pamela.fox/contactme">contact me</a>.</p>
+      </section>
+      
+      <section class="content">
+        <h2 id="search">Recipe Search</h2> 
+        <p>This is a custom Google search engine that only searches the <a href="#sites">sites</a> listed below. <span id="chrome-promo">You can also download <a href="https://chrome.google.com/webstore/detail/idkhgolnlgiedkdjiaejdekambmpnfij">this Chrome extension</a> for a convenient way to access this search box from your browser bar.
+        </span>
+        </p> 
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="008586021709508157834:b1tisnzw9ws" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="31" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+        <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+        
+        
+      </section>
+      
+      <section class="content">
+        <h2 id="feed">Latest Posts</h2> 
+        <p>These are the latest posts from the <a href="#sites">sites</a> listed below. You can subscribe to this aggregate feed using <a href="http://www.google.com/reader/public/atom/user%2F00961344416250096177%2Flabel%2FPaleo-Primal%20Recipes">this RSS feed</a>, or if you use Google Reader, you can import all off these individual feeds into your account using <a href="/feed/opml">this OPML file</a> and <a href="http://www.google.com/support/reader/bin/answer.py?hl=en&answer=69982">these instructions</a>.</p>
+        <ul id="feed-list"  class="image-list"></ul>
+      </section>
+      
+     <section class="content">
+       <h2 id="tweets">Latest Tweets</h2>
+       <p>These are the latest tweets from the authors of the <a href="#sites">sites</a> listed below.
+         You can follow <a href="http://twitter.com/#!/pamelafox/primalpaleocooks">this list</a> in Twitter.
+       </p>
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'list',
+        rpp: 30,
+        interval: 6000,
+        title: null,
+        subject: null,
+        width: 'auto',
+        height: 300,
+        theme: {
+          shell: {
+            background: '#5c7a2d',
+            color: '#ffffff'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#444444',
+            links: '#7aa82a'
+          }
+        },
+        features: {
+          header: false,
+          scrollbar: true,
+          loop: false,
+          live: false,
+          hashtags: true,
+          timestamp: true,
+          avatars: true,
+          behavior: 'all'
+        }
+      }).render().setList('pamelafox', 'primalpaleocooks').start();
+      </script>
+      </section>
+    
+      <section class="content">
+        <h2 id="sites">Recipe Sites</h2> 
+        <p>There are several sites that aggregate recipes across multiple Primal/Paleo sites:</p>
+        <table id="aggregators-list" class="link-list">
+        </table>
+        <br>
+        <p>There are also many individual websites and blogs dedicated to Paleo/Primal eating. It's a long list, so you can <a href="javascript:void();" onclick="addSites()">order it by popularity</a> (default) or <a href="javascript:void()" onclick="addSites('name');">alphabetically</a>:</p>
+        <table id="sites-list" class="link-list">
+        </table>
+      </section>
+      
+      <section class="content">
+        <h2 id="books">Recipe Books</h2> 
+        <p>These are cookbooks dedicated to Primal/Paleo recipes. Show the authors your support by buying one for your kitchen!</p>
+        <ul id="realbooks-list" class="image-list">
+        </ul>
+        <br><br>
+        <p style="clear:both">There are also some Primal/Paleo e-books for the digitally inclined:</p>
+        <ul id="ebooks-list" class="image-list">
+        </ul>
+      </section>
+      
+      <br><br>
+    </div> <!--! end of #container --> 
+  <script src="js/script.js"></script>
+  <script src="http://www.google.com/jsapi?key=ABQIAAAA-O3c-Om9OcvXMOJXreXHAxTPZYElJSBeBUeMSX5xXgq6lLjHthQK56gfyM5NBqKVAIOX7Pg8-ceW5A"></script> 
+  <script> 
+  google.load("feeds", "1");
+  
+  function addLatest() { 
+    var url = 'http://www.google.com/reader/public/atom/user%2F00961344416250096177%2Flabel%2FPaleo-Primal%20Recipes';
+    var feed = new google.feeds.Feed(url);
+    //feed.setResultFormat(google.feeds.Feed.MIXED_FORMAT);
+    feed.setNumEntries(8);
+    feed.load(function(result) {
+      if (!result.error) {
+        var container = document.getElementById('feed-list');
+        if (result.feed.entries.length > 0) {
+          container.innerHTML = "";
+        }
+        for (var i = 0; i < result.feed.entries.length; i++) {
+          addPost(result.feed.entries[i]);
+        }
+      }
+    }); 
+  }
+  
+  function addPost(entry) {
+    var container = document.getElementById('feed-list');
+    
+    var li = document.createElement('li');
+    
+    var a = document.createElement("a");
+    a.setAttribute("href", entry.link);
+    a.innerHTML = entry.title;
+    li.appendChild(a);
+    
+    li.appendChild(document.createElement('br'));
+    
+    var published = new Date(entry.publishedDate).toRelativeTime();
+    var info = document.createElement('span');
+    info.innerHTML = 'Posted by ' + entry.author + ' ' + published;
+    li.appendChild(info);
+    
+    var image = extractImage(entry.content);
+    if (image) {
+      var img = document.createElement('img');
+      img.src = image;
+      img.onload = function() {
+        if (img.width * img.height > 4000) {
+          li.insertBefore(img, a);
+        }
+      };
+    }
+    container.appendChild(li);
+  }
+  
+  function extractImage(html) {
+    if (html.indexOf('<img') > -1) {
+      var matches = html.match(/<img[^>]*src=\"([^\"]*)/);
+      if (matches) {
+       return matches[1];
+      }
+    }
+    return null;
+  }
+      
+  function appendScript(url) {
+    var script = document.createElement('script');
+    script.src = url;
+    document.body.appendChild(script);
+  }
+  
+  function addSites(orderby) {
+    var orderby = orderby || 'subscribers';
+    
+    var url = 'https://spreadsheets.google.com/feeds/list/0Ah0xU81penP1dG1RNXV2aEpqUDZvZkxvUTdOUnVpTGc/od6/public/values?orderby=column:' + orderby + '&alt=json-in-script';
+    if (orderby == 'subscribers') url += '&reverse=true';
+    
+    url += '&callback=onSitesLoad';
+    appendScript(url);
+  }
+  
+  function onSitesLoad(json) {
+    var entries = json.feed.entry;
+    document.getElementById('sites-list').innerHTML = '';
+    document.getElementById('aggregators-list').innerHTML = '';
+    var sitesList = document.getElementById('sites-list');
+    for (var i = 0; i < entries.length; i++) {
+      var entry = entries[i];
+      var name = entry.gsx$name.$t;
+      var url = entry.gsx$url.$t;
+      var rss = entry.gsx$url.$t;
+      var twitter = entry.gsx$twitter.$t;
+      var tr = document.createElement('tr');
+      var html = '<td><a href="' + url + '">' + name + '</a></td>';
+      if (rss.length > 2) {
+        html += '<td><img src="/img/rss.jpg"><a href="' + rss + '">Feed</a></td>';
+      } else {
+        html += '<td></td>';
+      }
+      if (twitter.length > 2) {
+        html += '<td><img src="/img/twitter.gif"><a href="http://twitter.com/' + twitter + '">@' + twitter + '</a></td>';
+      } else {
+        html += '<td></td>';
+      }
+      tr.innerHTML = html;
+      
+      var aggregator = entry.gsx$aggregator.$t;
+      if (aggregator == 'YES') {
+        document.getElementById('aggregators-list').appendChild(tr);
+      } else {
+        sitesList.appendChild(tr);
+      }
+    }
+  }
+  
+  function addBooks() {
+    var url = 'https://spreadsheets.google.com/feeds/list/0Ah0xU81penP1dG1RNXV2aEpqUDZvZkxvUTdOUnVpTGc/od7/public/values?alt=json-in-script';
+    url += '&callback=onBooksLoad';
+    appendScript(url);
+  }
+  
+  function onBooksLoad(json) {
+    var entries = json.feed.entry;
+    var booksList = document.getElementById('books-list');
+    for (var i = 0; i < entries.length; i++) {
+      var entry = entries[i];
+      var title = entry.gsx$title.$t;
+      var author = entry.gsx$author.$t;
+      var type = entry.gsx$type.$t;
+      var li = document.createElement('li');
+      
+      if (type == 'real') {
+        var booksList = document.getElementById('realbooks-list');
+        booksList.appendChild(li);
+        var asin = entry.gsx$asin.$t;
+        var thumb = entry.gsx$thumb.$t;
+        var img = document.createElement('img');
+        img.src = thumb;
+        li.appendChild(img);
+        var url = 'http://www.amazon.com/gp/product/' + asin + '?tag=amazonsimilar-20';
+      } else {
+        var booksList = document.getElementById('ebooks-list');
+        booksList.appendChild(li);
+      }
+      
+      var url = entry.gsx$url.$t;
+      var a = document.createElement("a");
+      a.setAttribute("href", url);
+      a.appendChild(document.createTextNode(title));
+      li.appendChild(a);
+      li.appendChild(document.createElement('br'));
+      
+      var info = document.createElement('span');
+      info.innerHTML = 'By ' + author;
+      li.appendChild(info);
+      
+      
+    }
+  }
+
+  google.setOnLoadCallback(function() {
+    addSites();
+    addLatest(); 
+    addBooks();
+    var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1
+    if (isChrome) {
+      document.getElementById('chrome-promo').style.visibility = 'visible';
+    }
+  });
+  </script>
+  <script> 
+  
+  var _gaq=[['_setAccount','UA-964209-15'],['_trackPageview']];
+  (function(d,t){
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src='//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s);
+  })(document,'script');
+  
+  </script> 
+  
+</body> 
+
+</html>
